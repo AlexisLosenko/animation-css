@@ -1,0 +1,130 @@
+body{
+    background-color:#ddd;
+    color:#333;
+    
+    font-family:'News Cycle', sans-serif;
+
+    padding:0;
+    margin:0;
+}
+
+header{
+    width: 100%;
+    background-color:#333;
+    color:#fff;
+    height: 10px;
+}
+
+.wrapper{
+    width: 80%;
+    margin:0 10% 0 10%;
+    padding:10px;
+    margin-top:10px;
+
+    & :hover{
+        img{
+            filter: blur(1px);
+        transform: scale(1.1);
+        background-color: red;
+        }
+
+        .description p{ 
+           color:gray;
+           height: 100px;
+        }
+
+    }
+}
+
+.card{
+    width: 300px;
+    padding:1px;
+    position: relative;  
+
+}
+
+
+.thumbnail{
+    background-color:#000;
+    height: 500px;
+    overflow: hidden;
+
+    .date{
+        position:absolute;
+        top:20px;
+        right: 20px;
+        z-index: 1;
+        background-color:#e74c3c;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        color:white;
+        padding: 1px 0;
+        text-align: center;
+
+    }
+    img{
+        display: block;
+        width: 120%;
+        transition: all 1s ease-out;
+    }
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    background-color:white;
+    padding:5px;
+    width: 290px;
+
+    transition: all 1s ease;
+
+    .category{
+        position: absolute;
+        top:-43px;
+        left: 0;
+        background-color:#e74c3c;
+        padding: 10px 15px;
+        color:white;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .title{
+        margin:0;
+        padding: 0 0 10px;
+        color: darkgrey;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .sub-title {
+        margin: 0;
+        padding: 0 0 20px;
+        color:#e74c3c;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+    .description p {
+        font-size: 14px;
+        line-height: 1.8em;
+        transition: all 1s ease-in-out;
+        color:white;
+        overflow: hidden;
+        height: 0;
+      }
+
+    .post-meta {
+        margin: 30px 0 0;
+        color: lightgray;
+
+        .timestamp {
+            margin: 0 16px 0 0;
+          }
+          a {
+            color: lightgray;
+            text-decoration: none;
+          }
+    }
+}
